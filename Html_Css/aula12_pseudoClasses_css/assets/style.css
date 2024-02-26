@@ -1,0 +1,77 @@
+
+.heading {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Pseudo-Classes */
+.heading:hover {
+    color: red;
+}
+
+/* Todos os links */
+a {
+    color: darkorange;
+}
+
+/* Não visitados */
+a:link {
+    color: deeppink;
+}
+
+/* Visitados */
+a:visited {
+    color: firebrick;
+}
+
+/* Passando o mouse */
+a:hover {
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+}
+
+/* Quando está ativo, ou seja clicado */
+a:active {
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+}
+
+/* Está selecionado */
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid red;
+}
+
+/* Desabilitado */
+input:disabled {
+    background-color: darkred;
+    cursor: not-allowed;
+}
+
+/* Habilitado */
+input:enabled {
+    background-color: lightgreen;
+    cursor: not-allowed;
+}
+
+/* Marcado */
+input:checked +p {
+    /* width: 50px;
+    height: 50px; */
+    background: red;
+}
+
+/* Primeiro filho de li */
+.pai .lista li:first-child {
+    background: red;
+}
+/* Ultimo filho de li */
+.pai .lista li:last-child {
+    background: blue;
+}
+
+input:required {
+    background: cyan;
+}

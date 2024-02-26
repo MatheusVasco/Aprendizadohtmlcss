@@ -1,0 +1,37 @@
+
+IN LINES 
+fisicas:
+bold - negrito
+s - riscar palavra
+u - sublinhar
+i - italico
+
+logicas:
+strong - negrito
+em - italico
+del - riscar
+ins - sublinhar
+sup - elevar 
+sub - descer
+
+
+code - colocar trecho de codigo deve se colocar dentro da tag pre para formatar igual o editor de texto
+
+span - tag generica
+
+
+br quebra de linha
+q coloca entre aspas (atributo cite)
+
+OUT LINES
+
+blockquote - bloco de citação (atributo cite) não pode ta dentro do paragrafo mas pode ter paragrafo dentro dele
+
+hr - linha horizontal
+
+div - tag generica
+
+a - link 
+exemplo : <a href="#one">one</a> vai para o id da pagina atual "one"
+exemplo : <a href="#two">two</a> vai para o id da pagina atual "two"
+exemplo : <a href="https://www.google.com.br/">Google</a> vai para site da google

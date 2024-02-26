@@ -1,0 +1,23 @@
+
+/* Todos os paragrafos */
+/* p {
+    color: blue;
+} */
+
+/* Todos os paragrafos menos o que tem a classe meio */
+p:not(.meio) {
+    color: green;
+}
+
+.meio {
+    color: red;
+}
+/* Quando o input não tiver marcado e tiver um p após ele, a cor de fundo fica ciano */
+input:not(:checked) + p {
+    background-color: cyan;
+}
+
+/* Quando o input não tiver marcado e tiver um p após ele, a cor de fundo fica verde claro */
+input:checked + p {
+    background-color: lightgreen;
+}

@@ -1,0 +1,44 @@
+/* Indico o indice que eu quero selecionar */
+ul li:nth-child(1) {
+    background-color: darkgoldenrod;
+}
+
+/* Seleciono os pares */
+ul li:nth-child(even) {
+    background-color: darkblue;
+}
+/* Seleciono os impares */
+ul li:nth-child(odd) {
+    background-color: purple;
+}
+
+/* De quanto em quanto eu quero selecionar */
+ul li:nth-child(4n) {
+    background-color: orangered;
+}
+
+/* começa a mudança na linha após o + e depois conta a cada linha antes do n */
+/* Exemplo, linha 8 verde, linha 12 verde(8+4), linha 16 verde(8+4+4) */
+ul li:nth-child(4n+8) {
+    background-color: greenyellow;
+}
+
+p:nth-child(3){
+    background-color: red;
+}
+p:nth-child(even){
+    background-color: mediumspringgreen;
+}
+p:nth-child(odd){
+    background-color: orange;
+}
+p:nth-child(4n){
+    background-color: lime;
+}
+p:nth-child(3n+10){
+    background-color: darkmagenta;
+}
+
+body {
+    background-color: black;
+}

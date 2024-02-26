@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex; /* block*/
+    /* display: inline-flex; */ /* inline */
+    /* direção principal dos conteudos */
+    flex-direction: row;
+    /* Caso não tenha espaço ele quebra a linha */
+    flex-wrap: wrap;
+    /* equvalente */
+    /* flex-flow: row wrap; */
+    
+    justify-content: space-evenly;
+    /* espaçamento entre os elementos */
+    /* gap: 10px; */
+
+    /* EIXO PRINCIPAL */
+    /* Joga o conteudo no começo do eixo principal */
+    /* justify-content: flex-start; */
+    /* Joga o conteudo no final */
+    /* justify-content: flex-end; */
+
+    /* distribui espaço de maneira igual para todos os elementos colocando o espaço desde a borda */
+    /* justify-content: space-evenly; */
+
+    /* distribui espaço de maneira igual para todos os elementos iniciando da borda */
+    /* justify-content: space-between; */
+    /* distribui o espaço*/
+    /* justify-content: space-around; */
+
+    /* EIXO PERPENDICULAR */
+    /* alinha do começo ao fim do elemento pai no eixo perpendicular */
+    /* align-items: stretch; */
+
+    /* alinha no começo do elemento pai no eixo perpendicular*/
+    /* align-items: flex-start; */
+    /* alinha no fim do elemento pai no eixo perpendicular*/
+    /* align-items: flex-end; */
+    /* alinha no centro do elemento pai no eixo perpendicular */
+    /* align-items: center; */
+    /* alinha na baseline da maior fonte */
+    align-items: baseline;
+
+
+    /* Alinha o conteudo */
+    /* align-content: center; */
+
+
+    background-color: yellow;
+    height: 500px;
+}
+
+.flex-item {
+    background: red;
+    /* distribuir o espaço entre os elementos */
+    /* flex-grow:  1; */
+    /* espaço minimo entre cada elemento */
+    /* flex-basis: 320px; */
+    /* não diminuir o elemento caso seja menor que o flex-basis */
+    /* flex-shrink: 0; */
+    /* equivalente */
+    /* grow shrink basis */
+    /* flex: 1 1 320px; */
+
+    /* width: 100%; */
+    /* Muda o alinhamento dos itens */
+    /* align-self: center; */
+    margin: 10px;
+}
+
+.flex-item:nth-child(2){
+    /* ajusta a ordem dos itens */
+    order: -1;
+}

@@ -1,0 +1,11 @@
+.bloco1 {
+    color: red;
+    font-family: sans-serif;
+}
+
+p {
+    /* Volta a forma original sem pegar a herança */
+    /* font-family: initial; */
+    /* Puxa a herança */
+    font-family: inherit;
+}

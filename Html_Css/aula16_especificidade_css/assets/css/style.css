@@ -1,0 +1,73 @@
+/* 
+    ID > CLASSES > ATRIBUTOS > PSEUDO-CLASSES > ELEMENTOS > PSEUDO-ELEMENTOS
+    1    0                                      0
+    0    1                                      
+*/
+
+/* Regra de prioridades */
+/* 
+!important
+style
+empate
+especificidade
+*/
+
+/* Tag Style tem a maior prioridade */
+
+/* Usar !important após uma instrução prioriza ela */
+/* p {
+    background-color: red !important;
+} */
+
+/* Maior prioridade */
+/* 1 1 1 */
+p#paragraf.parag {
+    background-color: cyan;
+}
+
+/* Segunda maior prioridade */
+/* 1 1 0 */
+#paragraf.parag {
+    background-color: yellow;
+    color: red;
+}
+
+/* Terceira maior prioridade */
+/* 1 0 1 */
+p#paragraf {
+    color: blue;
+    width: 400px;
+}
+
+/* Quarta maior prioridade */
+/* Id */
+/* 1 0 0 */
+#paragraf {
+    color: green;
+    width: 300px;
+    height: 200px
+}
+
+/* Quinta maior prioridade */
+/* 0 1 1 */
+p.parag {
+    color: aqua;
+    width: 600px;
+    padding: 5%;
+}
+
+/* Sexta maior prioridade */
+/* Classe */
+/* 0 1 0 */
+.parag {
+    padding: 10%;
+    margin: 3%;
+}
+
+/* Setima maior prioridade */
+/* Elemento */
+/* 0 0 1 */
+p {
+    margin: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}

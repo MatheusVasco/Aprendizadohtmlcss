@@ -1,0 +1,39 @@
+/* html, body {
+    height: 100%;
+} */
+.bloco1 {
+    
+    /* Soma border, padding e margin no tamanho do conteudo da div (Content-box) */
+    /* Soma border e margin no tamanho do conteudo da div (padding-box) */
+    /* Soma só a margin no tamanho do conteudo da div (border-box) */
+    /* o que não for somado é incluso no tamanho e altura do conteudo (parte interna) */
+    box-sizing: border-box;
+    background: red;
+    /* Conteudo (parte interna) */
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0;
+    min-height: 100px;
+    /* Barra caso o conteudo passe da parte interna definida */
+    overflow: auto;
+    /* scroll coloca a barra em todas mesmo se não passar */
+    /* auto coloca a barra somente se passar */
+    /* hidden esconde o conteudo que passar*/ 
+
+    /* Distanciamento entre blocos */
+    /* sentido horario */
+    /* top direita baixo esquerda */
+    margin: 0 auto 50px auto;
+    /* Enchimento da div */
+    /* sentido horario */
+    /* top direita baixo esquerda */
+    /* padding: 10px 5px 15px 1px; */
+    /* Todos os lados */
+    /* padding: 50px; */
+    /* Eixo x e eixo y */
+    padding: 20px 10px;
+    /* Borda */
+    border: 5px solid black;
+}

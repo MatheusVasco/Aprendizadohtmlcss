@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 40px;
+    font-style: sans-serif;
+}
+
+
+.grid {
+    display: grid;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* fr se adapta ao tamanho da tela */
+    /* repeat repete n vezes o que está em x repeat(n, x) */
+    /* grid-template-columns: repeat(3,1fr 2fr); */
+    /* minmax define o menor pixel e qual valor irá receber */
+    /* auto-fill define quantas vezes vai ser melhor multiplicar */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* apelidando as colunas(serve para linhas também) */
+    /* grid-template-columns: [um] 1fr [dois] 1fr [tres] 1fr [quatro]; */
+    /* grid-template-rows: 2fr 1fr 3fr; */
+    /* grid-template-rows: repeat(2, 1fr 2fr); */
+    /* gap espaçamento entre linhas espaçamento entre colunas */
+    /* gap: 30px 15px; */
+    gap: 30px;
+    /* espaçamento entre as linhas */
+    /* row-gap: 30px; */
+    /* espaçamento entre as colunas */
+    /* column-gap: 30px; */
+}
+
+.grid div {
+    background: tomato;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5){
+    /* Mudar a posição do elemento na gri */
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3; */
+    /* utilizando apelidos */
+    /* grid-column-start: um;
+    grid-column-end: dois; */
+    /* atalho definir colunas */
+    /* grid-column: um / quatro; */
+    /* atalho definir linhas */
+    /* grid-row: 1 / 4; */
+    /* atalho definir area da grid linha e coluna (inicio linha / inicio coluna / fim linha / fim coluna) */
+    /* grid-area: 1 / um /4 / quatro; */
+    background-color: cyan;
+    /* definir quanto de linha o elemento ocupa na grid com span */
+    grid-row: span 1;
+    /* definir quanto de colunas o elemento ocupa na grid com span */
+    grid-column: span 2;
+}
+/* mudando z index para mostrar elemento 5 que estava por baixo do elemento 6 pois ambas tinham o mesmo tamanho e estavam na mesma linha */
+/* .grid div:nth-child(5) {
+    z-index: 1;
+} */
+
+@media (max-width: 768px) {
+    
+.grid div:nth-child(5){
+    grid-column: span 1;
+}
+}

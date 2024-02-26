@@ -1,0 +1,127 @@
+/* todos os seletores */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 1 */
+/* por tag */
+/* p, h1 {
+    color: red;
+} */
+
+
+/* 2 */
+/* seleção de descendente */
+/* body div p {
+    color: blue;
+}
+.heading {
+    color: red;
+ }
+
+div.main-content .heading2 {
+    font-style: italic;
+    color: blue;
+}
+
+div.main-content h2.heading2 {
+    font-style: italic;
+    color: green;
+} */
+
+/* Error */
+/* body.error div.main-content h2.heading2 {
+    font-style: italic;
+    color: blueviolet;
+} */
+
+
+/* 3 */
+/* 
+div {
+    margin-left: 20px;
+    color: initial;
+    cor initial tirando heranças
+    color: inherit;
+    cor iguais deixando heranças
+} */
+
+/* .pai {
+    color: red;
+} */
+
+/* .pai.filha {
+    color: blue;
+}
+
+.pai .filha {
+    color: green; 
+} */
+
+/* .pai > .filha {
+    color: blue;
+}
+
+.pai > .filha > .filha {
+    color: green;
+} */
+
+/* 4 */
+/* Sibling Selector */
+/* Seleciona o primeiro o p que vêm depois de um h1 adjacent sibling selector */
+/* .pai h1+p {
+    color: red;
+}
+.pai p+h1 {
+    color: blue;
+} */
+
+/* Seleciona todos os p que vêm depois de um h1 general sibling selector */
+/* .pai h1~p {
+    color: green;
+} */
+
+/* 5 */
+/* Sibling Selector */
+/* .pai .um~.dois {
+    color: red;
+}
+.pai .um+.dois {
+    color: blue;
+} */
+
+/* 6 */
+/* Seleção por atributo */
+/* Seleção valor */
+/* [meu-atributo="valor"] {
+    color: red;
+} */
+/* Seleção valor que está contido no atributo separado por espaço*/
+/* [meu-atributo~="valor1"], [meu-atributo~="valor2"]  {
+    color: green;
+}
+[meu-atributo~="valor4"], [meu-atributo~="valor5"]  {
+    color: blue;
+} */
+/* Seleção valor que está contida com a palavra valor seguida de um traço */
+[meu-atributo|="qualquercoisa"]{
+    color: red;
+}
+/* começar com o que eu digitar */
+[meu-atributo^="qqaa"]{
+    color: green;
+}
+/* começar com o que eu digitar */
+[meu-atributo$="caa"]{
+    color: blue;
+}
+/* Contém o valor que eu eu digitar no atributo */
+[meu-atributo*="lor"]{
+    color: pink;
+}
+
+[checked]{
+    width: 50px;
+    height: 50px;
+}

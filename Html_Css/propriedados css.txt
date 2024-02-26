@@ -1,0 +1,64 @@
+ESTRUTURAÇÃO
+display - tipo de estruturação
+    block - o elemento ocupa o espaço de uma linha inteira
+    inline - os elementos são posicionados lado a lado desconsiderando as propriedados width e height 
+    inline-block - os elementos são posicionados lado a lado sem desconsiderar as propriedades width e height
+
+float - usado para empurrar o conteudo para esquerda ou direita (funciona como alinhamento dos elementos)
+    right - empurra os conteudos para a direita liberando o espaço a esquerda mesmo se o display estivar como block
+    left - empurra os conteudos para a esquerda liberando o espaço a direita mesmo se o display estivar como block
+
+POSICIONAMENTOS
+position - posicionamento do elemento
+    static - não muda mesmo se informar as coordenadas com top, left e right
+    relative - relativa aos elementos que estão ao redor, sem mudar o flow da pagina, isto é onde o objeto estava antes de eu mecher na propriedades que alteram o local do elemento na pagina, ele vai está com o espaço anterior ocupado
+    absolut - relativa a view port da pagina ou ao elemento de posição relativa, mudando o flow da pagina, isto é libera o local anterior do elemento na pagina, ficando lá mesmo se rolar a pagina.
+    fixed - relativa a view port da pagina, mudando o flow da pagina, isto é libera o local anterior do elemento na pagina, mas ele sempre irá acompanhando a página mesmo se rolar a pagina.
+    sticky - relativa a view port da pagina, ele irá acompanhar a pagina mesmo se rolar, no entanto quando encontrar o proximo elemento com sticky ele sobrepõe
+
+top - informo quanto eu quero que o elemento fique abaixo do topo da pagina
+left - informo quanto eu quero que o elemento fique para a direita a partir da esquerda da pagina
+right - informo quanto eu quero que o elemento fique para a esquerda a partir da direita da pagina
+bottom - informo quanto eu quero que o elemento fique acima do fundo da pagina
+
+z-index - define em qual camada irá ficar o elemento para definir qual irá ficar por cima de qual o que tiver o maior numero vai ficar por cima
+
+TAMANHOS
+width - largura do elemento
+height - altura do elemento
+
+scroll-behavior - tipo de animação do scroll, smooth desse ou sobe suavemente
+
+PROPRIEDADES DE TEXTO
+font-weight - 100-900 bold colocar negrito
+direction - mudar a direção do texto rtl ou ltr
+letter-spacing - espaçamento entre as letras
+word-spacing - espaçamento entre as palavras
+line-height - altura da linha
+text-align - alinhamento do texto
+text-decoration : decoração do texto
+    overline - linha acima do texto
+    underline - linha abaixo do texto
+    line-through - texto riscado
+text-indent - indentação do texto
+text-shadow (esquerda pra direita, cima pra baixo, fumaça, cor) - sombreamento
+exemplo: text-shadow: 2px 2px 5px red;
+text-transform: tranformar texto
+    lowercase - deixa tudo minusculo
+    uppercase - deixa tudo maiusculo
+    capitalize - primeira letra de cada palavra maiuscula
+
+
+
+
+Unidades de medidas utilizadas em width, height, font-size e etc:
+px - tamanho fixo que eu defino que não ira mudar por nada
+em - se baseia no tamanho da medida pai mais proxima, onde 1 é o mesmo tamanho, 2 o dobro, 0.5 a metade e etc, fazendo como uma multiplicação para definir o resultado
+rem - se baseia no tamanho do root(html), onde 1 é o mesmo tamanho, 2 o dobro, 0.5 a metade e etc, fazendo como uma multiplicação para definir o resultado
+% - se baseia no tamanho ou largura do pai do elemento atual fazendo uma operação de porcentagem para definir o valor, também dependendo dos fatores de cada usuário
+vmin - menor parte da minha viewport
+vmax - maior parte da minha viewport
+
+regra boa para deixar o site responsivo:
+size html : o padrão é 16px, podendo mudar com a definição do navegador do usuário, mas definindo a fonte padrão como 62.5% ele ficaria 10px no root, assim podemos usar as outras medidas com rem, por exemplo, se quisermos 300px, podemos dizer que o root vai ter 62.5% do tamanho, que ficaria 10px, depois na propriedade que quisermos 300px, colocaremos 30rem, onde ficaria (10 do root vezes 30 do meu elemento) 300px
+

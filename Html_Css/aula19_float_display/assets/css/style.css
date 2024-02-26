@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    padding: 15px;
+}
+
+.grid .col {
+    padding: 15px;
+    /* display: inline-block; */
+    width: 33.33%;
+    height: 300px;
+    /* background: red;
+    margin: 30px; */
+    /* liberar espaço não usado a esquerda trazendo o proximo conteudo alinhado a esquerda*/
+    float: left;
+    /* liberar espaço não usado a direita trazendo o proximo conteudo alinhado a direita*/
+    /* float: right; */
+}
+/* após terminar a classe grid ele limpa as laterais, liberando para os proximos elementos */
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+/* p { */
+    /* Limpar a esquerda se for o caso pulando a linha */
+    /* clear: left; */
+    /* Limpar a direita se for o caso pulando a linha */
+    /* clear: right; */
+    /* Limpar ambos os lados se for o caso pulando a linha*/
+    /* clear: both; */
+/* } */

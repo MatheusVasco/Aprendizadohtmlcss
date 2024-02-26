@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table td, table th {
+            border: 1px solid gray;
+            padding: 5px;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        table caption {
+            /* caption-side: top; */
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            /* margin-bottom: 5px; */
+            margin-top: 5px;
+        }
+        tfoot td {
+            background: #ddd;
+        }
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-table">
+        <table>
+            <caption>Tabela de teste</caption>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome Vendedor</th>
+                    <th>Valor faturado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>000001</td>
+                    <td>Matheus</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">000002 Ricardo</td>
+                    <td colspan="1">2000</td>
+                    <!-- <td colspan="2">Aqui 3</td> -->
+                </tr>
+                <tr>
+                    <td>4000</td>
+                </tr>
+                <tr>
+                    <td>000003</td>
+                    <td>Richard</td>
+                    <td>7000</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total: </td>
+                </tr>
+                <tr>
+                    <td>18000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem adipisci totam et eaque? Obcaecati quis reprehenderit magnam incidunt recusandae. Inventore harum fugiat maxime dolor consectetur quisquam odit. Adipisci, perspiciatis ex.</p>
+</body>
+</html>
+
+
+<!-- 
+    colspan numero de colunas que vai ocupar
+    rowspan numero de linhas que vai ocupas
+
+
+-->

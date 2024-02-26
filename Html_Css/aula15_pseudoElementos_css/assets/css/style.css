@@ -1,0 +1,42 @@
+/* Pseudo elemento */
+ul li::after {
+    content: ' - ';
+    background-color: red;
+    color: white;
+    display: block;
+}
+
+ul li::before {
+    content: ' - ';
+    background-color: yellow;
+    color: purple;
+    display: block;
+}
+
+p::first-letter {
+    font-size: 100px;
+    display: block;
+    float: left;
+    margin: 0 10 10 0;
+}
+
+p::first-line {
+    background-color: aqua;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+/* ::placeholder{
+    color: lime;
+} */
+
+input::placeholder{
+    color: crimson;
+}
+
+.input-text::placeholder{
+    color: lime;
+}
